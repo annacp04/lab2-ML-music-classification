@@ -1,0 +1,2 @@
+model,cfg,test_acc,params,train_time_s,infer_ms_per_song
+scratch_cnn,dropout_0.0,0.825,391946,66.53135561943054,8.365259170532227
