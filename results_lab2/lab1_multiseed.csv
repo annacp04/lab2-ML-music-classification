@@ -1,0 +1,11 @@
+model,seed,test_acc,test_macro_f1
+Random Forest | Correlation,42,0.795,0.7911079338986315
+Extra Trees | Correlation,42,0.785,0.7801191569420067
+Random Forest | Correlation,43,0.87,0.8680696096943237
+Extra Trees | Correlation,43,0.845,0.8430363122198212
+Random Forest | Correlation,44,0.835,0.8336366087200491
+Extra Trees | Correlation,44,0.815,0.8137140671996356
+Random Forest | Correlation,45,0.81,0.803188686357179
+Extra Trees | Correlation,45,0.795,0.7927692476529686
+Random Forest | Correlation,46,0.815,0.8163616530568794
+Extra Trees | Correlation,46,0.805,0.8020433113172762

@@ -1,0 +1,11 @@
+song,seed,true_name,pred_name,p1,second_name,p2,p_true,rank_true
+rock.00016,45,rock,metal,0.999,rock,0.0,0.0,2
+rock.00016,44,rock,metal,0.999,rock,0.001,0.001,2
+rock.00051,45,rock,pop,0.993,hiphop,0.004,0.001,4
+pop.00069,44,pop,hiphop,0.99,metal,0.008,0.0,6
+pop.00093,44,pop,disco,0.984,pop,0.016,0.016,2
+rock.00019,45,rock,metal,0.972,rock,0.019,0.019,2
+rock.00051,44,rock,pop,0.97,hiphop,0.014,0.012,3
+reggae.00088,44,reggae,pop,0.969,disco,0.03,0.0,4
+pop.00062,42,pop,hiphop,0.965,pop,0.022,0.022,2
+blues.00083,44,blues,disco,0.961,blues,0.033,0.033,2

@@ -1,0 +1,162 @@
+params,mean_test_score,std_test_score,rank_test_score,model
+"{'model__C': 0.1, 'selector': 'passthrough'}",0.7246993670886075,0.06257608131684406,1,Logistic Regression
+"{'model__C': 1, 'selector': SelectFromModel(estimator=LogisticRegression(C=0.1, max_iter=10000,
+                                             penalty='l1', random_state=42,
+                                             solver='saga', tol=0.001)), 'selector__estimator__C': 0.1}",0.7196993670886076,0.06309920462144,2,Logistic Regression
+"{'model__C': 1, 'selector': 'passthrough'}",0.7159493670886075,0.06475582890383623,3,Logistic Regression
+"{'model__C': 0.1, 'selector': PCA(n_components=0.99, random_state=42, svd_solver='full'), 'selector__n_components': 0.99}",0.7134335443037975,0.0574849611628489,4,Logistic Regression
+"{'model__C': 0.1, 'selector': SelectFromModel(estimator=LogisticRegression(C=0.1, max_iter=10000,
+                                             penalty='l1', random_state=42,
+                                             solver='saga', tol=0.001)), 'selector__estimator__C': 0.1}",0.7134335443037975,0.06040091687958262,4,Logistic Regression
+"{'model__C': 1, 'selector': PCA(n_components=0.99, random_state=42, svd_solver='full'), 'selector__n_components': 0.99}",0.7121993670886075,0.06201411234700913,6,Logistic Regression
+"{'model__C': 0.1, 'selector': PCA(n_components=0.99, random_state=42, svd_solver='full'), 'selector__n_components': 0.95}",0.7033860759493671,0.052703280690537535,7,Logistic Regression
+"{'model__C': 1, 'selector': PCA(n_components=0.99, random_state=42, svd_solver='full'), 'selector__n_components': 0.95}",0.6996677215189874,0.0478390300364101,8,Logistic Regression
+"{'model__C': 1, 'selector': SelectKBest(k=40, score_func=<function _anova_score at 0x7ba1004427a0>), 'selector__k': 40}",0.6971993670886076,0.07061679079967949,9,Logistic Regression
+"{'model__C': 0.1, 'selector': SelectKBest(k=40, score_func=<function _anova_score at 0x7ba1004427a0>), 'selector__k': 40}",0.6934177215189873,0.06081514460898608,10,Logistic Regression
+"{'model__C': 1, 'selector': SelectKBest(k=40, score_func=<function _anova_score at 0x7ba1004427a0>), 'selector__k': 30}",0.6821518987341773,0.062321761551054296,11,Logistic Regression
+"{'model__C': 0.1, 'selector': SelectKBest(k=40, score_func=<function _anova_score at 0x7ba1004427a0>), 'selector__k': 30}",0.6733860759493672,0.06314309425826083,12,Logistic Regression
+"{'model__C': 0.01, 'selector': 'passthrough'}",0.6508386075949366,0.04502548782809563,13,Logistic Regression
+"{'model__C': 1, 'selector': SelectKBest(k=40, score_func=<function _anova_score at 0x7ba1004427a0>), 'selector__k': 20}",0.6495569620253165,0.0630120349125713,14,Logistic Regression
+"{'model__C': 0.01, 'selector': PCA(n_components=0.99, random_state=42, svd_solver='full'), 'selector__n_components': 0.99}",0.6458227848101267,0.04529702663194619,15,Logistic Regression
+"{'model__C': 0.01, 'selector': SelectFromModel(estimator=LogisticRegression(C=0.1, max_iter=10000,
+                                             penalty='l1', random_state=42,
+                                             solver='saga', tol=0.001)), 'selector__estimator__C': 0.1}",0.6458227848101266,0.046656410295855814,16,Logistic Regression
+"{'model__C': 0.01, 'selector': PCA(n_components=0.99, random_state=42, svd_solver='full'), 'selector__n_components': 0.95}",0.6307753164556962,0.03893294189383708,17,Logistic Regression
+"{'model__C': 0.1, 'selector': SelectKBest(k=40, score_func=<function _anova_score at 0x7ba1004427a0>), 'selector__k': 20}",0.6270253164556961,0.038300148014421734,18,Logistic Regression
+"{'model__C': 0.01, 'selector': SelectKBest(k=40, score_func=<function _anova_score at 0x7ba1004427a0>), 'selector__k': 40}",0.5970411392405064,0.03819602227994342,19,Logistic Regression
+"{'model__C': 0.01, 'selector': SelectKBest(k=40, score_func=<function _anova_score at 0x7ba1004427a0>), 'selector__k': 30}",0.5781803797468354,0.03409158062707419,20,Logistic Regression
+"{'model__C': 0.01, 'selector': SelectKBest(k=40, score_func=<function _anova_score at 0x7ba1004427a0>), 'selector__k': 20}",0.5230854430379747,0.04056268639278537,21,Logistic Regression
+"{'model__n_neighbors': 13, 'model__weights': 'distance', 'selector': LinearDiscriminantAnalysis()}",0.7060284810126582,0.06721713603287563,1,KNN
+"{'model__n_neighbors': 13, 'model__weights': 'uniform', 'selector': LinearDiscriminantAnalysis()}",0.7060284810126582,0.0648509319629418,1,KNN
+"{'model__n_neighbors': 5, 'model__weights': 'distance', 'selector': LinearDiscriminantAnalysis()}",0.7009651898734177,0.08122673856312926,3,KNN
+"{'model__n_neighbors': 5, 'model__weights': 'uniform', 'selector': LinearDiscriminantAnalysis()}",0.6996993670886077,0.08288235220722599,4,KNN
+"{'model__n_neighbors': 9, 'model__weights': 'uniform', 'selector': LinearDiscriminantAnalysis()}",0.6996993670886076,0.052980980619488915,5,KNN
+"{'model__n_neighbors': 9, 'model__weights': 'distance', 'selector': LinearDiscriminantAnalysis()}",0.6996835443037975,0.05728661037492685,6,KNN
+"{'model__n_neighbors': 7, 'model__weights': 'distance', 'selector': LinearDiscriminantAnalysis()}",0.6972151898734176,0.07854351966682917,7,KNN
+"{'model__n_neighbors': 5, 'model__weights': 'distance', 'selector': SelectFromModel(estimator=LogisticRegression(C=0.1, max_iter=10000,
+                                             penalty='l1', random_state=42,
+                                             solver='saga', tol=0.001)), 'selector__estimator__C': 0.1}",0.697136075949367,0.04347728424030961,8,KNN
+"{'model__n_neighbors': 9, 'model__weights': 'distance', 'selector': SelectFromModel(estimator=LogisticRegression(C=0.1, max_iter=10000,
+                                             penalty='l1', random_state=42,
+                                             solver='saga', tol=0.001)), 'selector__estimator__C': 0.1}",0.6933860759493671,0.048364318609207424,9,KNN
+"{'model__n_neighbors': 7, 'model__weights': 'uniform', 'selector': LinearDiscriminantAnalysis()}",0.6921835443037974,0.07332809074840037,10,KNN
+"{'model__n_neighbors': 7, 'model__weights': 'distance', 'selector': SelectFromModel(estimator=LogisticRegression(C=0.1, max_iter=10000,
+                                             penalty='l1', random_state=42,
+                                             solver='saga', tol=0.001)), 'selector__estimator__C': 0.1}",0.6909018987341773,0.04754372971253275,11,KNN
+"{'model__n_neighbors': 5, 'model__weights': 'distance', 'selector': PCA(n_components=0.99, random_state=42, svd_solver='full'), 'selector__n_components': 0.99}",0.6908860759493671,0.04795610174190311,12,KNN
+"{'model__n_neighbors': 5, 'model__weights': 'distance', 'selector': PCA(n_components=0.99, random_state=42, svd_solver='full'), 'selector__n_components': 0.95}",0.6884335443037974,0.05100194089526515,13,KNN
+"{'model__n_neighbors': 7, 'model__weights': 'distance', 'selector': PCA(n_components=0.99, random_state=42, svd_solver='full'), 'selector__n_components': 0.99}",0.6871518987341771,0.05760844534861793,14,KNN
+"{'model__n_neighbors': 5, 'model__weights': 'distance', 'selector': 'passthrough'}",0.6846360759493672,0.04749922255834142,15,KNN
+"{'model__n_neighbors': 7, 'model__weights': 'distance', 'selector': 'passthrough'}",0.6834018987341772,0.06203978333288268,16,KNN
+"{'model__n_neighbors': 7, 'model__weights': 'distance', 'selector': PCA(n_components=0.99, random_state=42, svd_solver='full'), 'selector__n_components': 0.95}",0.6821202531645569,0.04250596110771703,17,KNN
+"{'model__n_neighbors': 9, 'model__weights': 'distance', 'selector': PCA(n_components=0.99, random_state=42, svd_solver='full'), 'selector__n_components': 0.99}",0.6758702531645568,0.05698528225996355,18,KNN
+"{'model__n_neighbors': 5, 'model__weights': 'uniform', 'selector': SelectFromModel(estimator=LogisticRegression(C=0.1, max_iter=10000,
+                                             penalty='l1', random_state=42,
+                                             solver='saga', tol=0.001)), 'selector__estimator__C': 0.1}",0.6746202531645569,0.0462445729481753,19,KNN
+"{'model__n_neighbors': 7, 'model__weights': 'uniform', 'selector': SelectFromModel(estimator=LogisticRegression(C=0.1, max_iter=10000,
+                                             penalty='l1', random_state=42,
+                                             solver='saga', tol=0.001)), 'selector__estimator__C': 0.1}",0.6746044303797468,0.05497971478112518,20,KNN
+"{'model__n_neighbors': 9, 'model__weights': 'distance', 'selector': 'passthrough'}",0.6721044303797468,0.050145201059648856,21,KNN
+"{'model__n_neighbors': 9, 'model__weights': 'distance', 'selector': PCA(n_components=0.99, random_state=42, svd_solver='full'), 'selector__n_components': 0.95}",0.6709018987341773,0.04805186972788318,22,KNN
+"{'model__n_neighbors': 9, 'model__weights': 'uniform', 'selector': SelectFromModel(estimator=LogisticRegression(C=0.1, max_iter=10000,
+                                             penalty='l1', random_state=42,
+                                             solver='saga', tol=0.001)), 'selector__estimator__C': 0.1}",0.6708544303797469,0.05609246620770011,23,KNN
+"{'model__n_neighbors': 13, 'model__weights': 'distance', 'selector': PCA(n_components=0.99, random_state=42, svd_solver='full'), 'selector__n_components': 0.99}",0.6708544303797469,0.05204675556902638,23,KNN
+"{'model__n_neighbors': 13, 'model__weights': 'distance', 'selector': SelectFromModel(estimator=LogisticRegression(C=0.1, max_iter=10000,
+                                             penalty='l1', random_state=42,
+                                             solver='saga', tol=0.001)), 'selector__estimator__C': 0.1}",0.6683544303797468,0.04835428540637026,25,KNN
+"{'model__n_neighbors': 13, 'model__weights': 'distance', 'selector': 'passthrough'}",0.6670727848101266,0.04415500840521787,26,KNN
+"{'model__n_neighbors': 7, 'model__weights': 'uniform', 'selector': PCA(n_components=0.99, random_state=42, svd_solver='full'), 'selector__n_components': 0.95}",0.6645727848101266,0.049661642052146175,27,KNN
+"{'model__n_neighbors': 5, 'model__weights': 'uniform', 'selector': PCA(n_components=0.99, random_state=42, svd_solver='full'), 'selector__n_components': 0.99}",0.6633386075949367,0.049435102551573296,28,KNN
+"{'model__n_neighbors': 5, 'model__weights': 'uniform', 'selector': 'passthrough'}",0.6633227848101266,0.04455920952329395,29,KNN
+"{'model__n_neighbors': 9, 'model__weights': 'uniform', 'selector': PCA(n_components=0.99, random_state=42, svd_solver='full'), 'selector__n_components': 0.99}",0.659620253164557,0.06611291947944682,30,KNN
+"{'model__n_neighbors': 5, 'model__weights': 'uniform', 'selector': PCA(n_components=0.99, random_state=42, svd_solver='full'), 'selector__n_components': 0.95}",0.6558702531645569,0.052209984876745524,31,KNN
+"{'model__n_neighbors': 7, 'model__weights': 'uniform', 'selector': PCA(n_components=0.99, random_state=42, svd_solver='full'), 'selector__n_components': 0.99}",0.653370253164557,0.06148360583645677,32,KNN
+"{'model__n_neighbors': 9, 'model__weights': 'uniform', 'selector': 'passthrough'}",0.6533544303797469,0.06078667476144024,33,KNN
+"{'model__n_neighbors': 9, 'model__weights': 'uniform', 'selector': PCA(n_components=0.99, random_state=42, svd_solver='full'), 'selector__n_components': 0.95}",0.6521677215189874,0.06708767650715253,34,KNN
+"{'model__n_neighbors': 13, 'model__weights': 'uniform', 'selector': SelectFromModel(estimator=LogisticRegression(C=0.1, max_iter=10000,
+                                             penalty='l1', random_state=42,
+                                             solver='saga', tol=0.001)), 'selector__estimator__C': 0.1}",0.6520886075949368,0.05427255784621401,35,KNN
+"{'model__n_neighbors': 13, 'model__weights': 'distance', 'selector': PCA(n_components=0.99, random_state=42, svd_solver='full'), 'selector__n_components': 0.95}",0.6508860759493671,0.04368264838845201,36,KNN
+"{'model__n_neighbors': 7, 'model__weights': 'uniform', 'selector': 'passthrough'}",0.650854430379747,0.06412325615914909,37,KNN
+"{'model__n_neighbors': 13, 'model__weights': 'uniform', 'selector': 'passthrough'}",0.6482911392405064,0.05057204609127492,38,KNN
+"{'model__n_neighbors': 13, 'model__weights': 'uniform', 'selector': PCA(n_components=0.99, random_state=42, svd_solver='full'), 'selector__n_components': 0.99}",0.6445253164556963,0.04869307201211735,39,KNN
+"{'model__n_neighbors': 13, 'model__weights': 'uniform', 'selector': PCA(n_components=0.99, random_state=42, svd_solver='full'), 'selector__n_components': 0.95}",0.6321044303797468,0.04868670886075949,40,KNN
+"{'model__criterion': 'entropy', 'model__max_depth': 10, 'model__min_samples_leaf': 1, 'selector': SelectFromModel(estimator=RandomForestClassifier(n_estimators=200, n_jobs=1,
+                                                 random_state=42),
+                max_features=50, threshold=-inf), 'selector__max_features': 50}",0.5933227848101266,0.04590166692788544,1,Decision Tree
+"{'model__criterion': 'entropy', 'model__max_depth': 10, 'model__min_samples_leaf': 5, 'selector': SelectFromModel(estimator=RandomForestClassifier(n_estimators=200, n_jobs=1,
+                                                 random_state=42),
+                max_features=50, threshold=-inf), 'selector__max_features': 50}",0.5919936708860758,0.04221625736414353,2,Decision Tree
+"{'model__criterion': 'entropy', 'model__max_depth': None, 'model__min_samples_leaf': 1, 'selector': SelectFromModel(estimator=RandomForestClassifier(n_estimators=200, n_jobs=1,
+                                                 random_state=42),
+                max_features=50, threshold=-inf), 'selector__max_features': 50}",0.5907278481012659,0.047845401270014146,3,Decision Tree
+"{'model__criterion': 'entropy', 'model__max_depth': 10, 'model__min_samples_leaf': 5, 'selector': 'passthrough'}",0.589493670886076,0.04761492140354726,4,Decision Tree
+"{'model__criterion': 'entropy', 'model__max_depth': None, 'model__min_samples_leaf': 5, 'selector': SelectFromModel(estimator=RandomForestClassifier(n_estimators=200, n_jobs=1,
+                                                 random_state=42),
+                max_features=50, threshold=-inf), 'selector__max_features': 50}",0.589493670886076,0.0459448663102417,4,Decision Tree
+"{'model__criterion': 'entropy', 'model__max_depth': None, 'model__min_samples_leaf': 5, 'selector': 'passthrough'}",0.588243670886076,0.04299683031900343,6,Decision Tree
+"{'model__criterion': 'entropy', 'model__max_depth': 10, 'model__min_samples_leaf': 5, 'selector': CorrelationFilter(threshold=0.9), 'selector__threshold': 0.9}",0.5869620253164558,0.04419902847269179,7,Decision Tree
+"{'model__criterion': 'entropy', 'model__max_depth': None, 'model__min_samples_leaf': 5, 'selector': CorrelationFilter(threshold=0.9), 'selector__threshold': 0.9}",0.5869620253164557,0.04348625205659622,8,Decision Tree
+"{'model__criterion': 'gini', 'model__max_depth': 10, 'model__min_samples_leaf': 5, 'selector': 'passthrough'}",0.5844936708860758,0.043079780049656055,9,Decision Tree
+"{'model__criterion': 'entropy', 'model__max_depth': 10, 'model__min_samples_leaf': 1, 'selector': CorrelationFilter(threshold=0.9), 'selector__threshold': 0.9}",0.5832278481012658,0.05477316993024649,10,Decision Tree
+"{'model__criterion': 'gini', 'model__max_depth': 10, 'model__min_samples_leaf': 5, 'selector': SelectFromModel(estimator=RandomForestClassifier(n_estimators=200, n_jobs=1,
+                                                 random_state=42),
+                max_features=50, threshold=-inf), 'selector__max_features': 50}",0.5819778481012658,0.04224609170634396,11,Decision Tree
+"{'model__criterion': 'entropy', 'model__max_depth': 10, 'model__min_samples_leaf': 1, 'selector': 'passthrough'}",0.5807278481012658,0.04261736013309586,12,Decision Tree
+"{'model__criterion': 'gini', 'model__max_depth': None, 'model__min_samples_leaf': 5, 'selector': SelectFromModel(estimator=RandomForestClassifier(n_estimators=200, n_jobs=1,
+                                                 random_state=42),
+                max_features=50, threshold=-inf), 'selector__max_features': 50}",0.579493670886076,0.04243588290571437,13,Decision Tree
+"{'model__criterion': 'gini', 'model__max_depth': None, 'model__min_samples_leaf': 5, 'selector': 'passthrough'}",0.5794778481012658,0.04184341650686704,14,Decision Tree
+"{'model__criterion': 'entropy', 'model__max_depth': None, 'model__min_samples_leaf': 1, 'selector': 'passthrough'}",0.5781803797468354,0.05279427875870926,15,Decision Tree
+"{'model__criterion': 'gini', 'model__max_depth': 10, 'model__min_samples_leaf': 1, 'selector': SelectFromModel(estimator=RandomForestClassifier(n_estimators=200, n_jobs=1,
+                                                 random_state=42),
+                max_features=50, threshold=-inf), 'selector__max_features': 50}",0.5769620253164557,0.05589315364388498,16,Decision Tree
+"{'model__criterion': 'gini', 'model__max_depth': None, 'model__min_samples_leaf': 5, 'selector': CorrelationFilter(threshold=0.9), 'selector__threshold': 0.9}",0.5757594936708861,0.04755960638261578,17,Decision Tree
+"{'model__criterion': 'entropy', 'model__max_depth': None, 'model__min_samples_leaf': 1, 'selector': CorrelationFilter(threshold=0.9), 'selector__threshold': 0.9}",0.5756803797468354,0.05138713621507309,18,Decision Tree
+"{'model__criterion': 'gini', 'model__max_depth': 10, 'model__min_samples_leaf': 5, 'selector': CorrelationFilter(threshold=0.9), 'selector__threshold': 0.9}",0.5719778481012657,0.043437187138282096,19,Decision Tree
+"{'model__criterion': 'gini', 'model__max_depth': 10, 'model__min_samples_leaf': 1, 'selector': CorrelationFilter(threshold=0.9), 'selector__threshold': 0.9}",0.5719620253164558,0.04175721347771532,20,Decision Tree
+"{'model__criterion': 'gini', 'model__max_depth': 10, 'model__min_samples_leaf': 1, 'selector': 'passthrough'}",0.5694145569620254,0.045248077190359955,21,Decision Tree
+"{'model__criterion': 'gini', 'model__max_depth': None, 'model__min_samples_leaf': 1, 'selector': SelectFromModel(estimator=RandomForestClassifier(n_estimators=200, n_jobs=1,
+                                                 random_state=42),
+                max_features=50, threshold=-inf), 'selector__max_features': 50}",0.5644778481012658,0.04036033879943439,22,Decision Tree
+"{'model__criterion': 'gini', 'model__max_depth': None, 'model__min_samples_leaf': 1, 'selector': CorrelationFilter(threshold=0.9), 'selector__threshold': 0.9}",0.5619462025316455,0.044401691687632826,23,Decision Tree
+"{'model__criterion': 'gini', 'model__max_depth': None, 'model__min_samples_leaf': 1, 'selector': 'passthrough'}",0.5593670886075949,0.05845557765144686,24,Decision Tree
+"{'model__alpha': 0.001, 'model__hidden_layer_sizes': (128, 64), 'selector': PCA(n_components=0.99, random_state=42, svd_solver='full'), 'selector__n_components': 0.99}",0.7234810126582277,0.05628425891520963,1,ANN (MLP)
+"{'model__alpha': 0.01, 'model__hidden_layer_sizes': (128, 64), 'selector': PCA(n_components=0.99, random_state=42, svd_solver='full'), 'selector__n_components': 0.99}",0.7209810126582278,0.05330640547744232,2,ANN (MLP)
+"{'model__alpha': 0.001, 'model__hidden_layer_sizes': (128, 64), 'selector': 'passthrough'}",0.7084493670886076,0.07310990277214181,3,ANN (MLP)
+"{'model__alpha': 0.01, 'model__hidden_layer_sizes': (128, 64), 'selector': 'passthrough'}",0.7046993670886076,0.07139671306521458,4,ANN (MLP)
+"{'model__alpha': 0.01, 'model__hidden_layer_sizes': (128,), 'selector': PCA(n_components=0.99, random_state=42, svd_solver='full'), 'selector__n_components': 0.95}",0.6996518987341771,0.0674254069852772,5,ANN (MLP)
+"{'model__alpha': 0.001, 'model__hidden_layer_sizes': (128,), 'selector': PCA(n_components=0.99, random_state=42, svd_solver='full'), 'selector__n_components': 0.95}",0.6996518987341771,0.0674254069852772,5,ANN (MLP)
+"{'model__alpha': 0.001, 'model__hidden_layer_sizes': (128, 64), 'selector': PCA(n_components=0.99, random_state=42, svd_solver='full'), 'selector__n_components': 0.95}",0.6896835443037974,0.06413210283722677,7,ANN (MLP)
+"{'model__alpha': 0.01, 'model__hidden_layer_sizes': (128, 64), 'selector': PCA(n_components=0.99, random_state=42, svd_solver='full'), 'selector__n_components': 0.95}",0.6884651898734175,0.06979908885106162,8,ANN (MLP)
+"{'model__alpha': 0.01, 'model__hidden_layer_sizes': (128,), 'selector': PCA(n_components=0.99, random_state=42, svd_solver='full'), 'selector__n_components': 0.99}",0.6859335443037976,0.05623269241822863,9,ANN (MLP)
+"{'model__alpha': 0.01, 'model__hidden_layer_sizes': (128,), 'selector': 'passthrough'}",0.6846835443037975,0.06085648738928827,10,ANN (MLP)
+"{'model__alpha': 0.001, 'model__hidden_layer_sizes': (128,), 'selector': PCA(n_components=0.99, random_state=42, svd_solver='full'), 'selector__n_components': 0.99}",0.6846835443037975,0.05434622394759916,10,ANN (MLP)
+"{'model__alpha': 0.001, 'model__hidden_layer_sizes': (128,), 'selector': 'passthrough'}",0.6796835443037976,0.05612795649585488,12,ANN (MLP)
+"{'model__max_features': 'sqrt', 'model__min_samples_leaf': 1, 'selector': CorrelationFilter(threshold=0.9), 'selector__threshold': 0.9}",0.7848101265822786,0.03792282851962678,1,Random Forest
+"{'model__max_features': 0.2, 'model__min_samples_leaf': 1, 'selector': 'passthrough'}",0.7835601265822786,0.04192825705159604,2,Random Forest
+"{'model__max_features': 0.2, 'model__min_samples_leaf': 1, 'selector': CorrelationFilter(threshold=0.9), 'selector__threshold': 0.9}",0.7835443037974683,0.03179749921892398,3,Random Forest
+"{'model__max_features': 'sqrt', 'model__min_samples_leaf': 1, 'selector': 'passthrough'}",0.782246835443038,0.036200360096861534,4,Random Forest
+"{'model__max_features': 0.2, 'model__min_samples_leaf': 3, 'selector': CorrelationFilter(threshold=0.9), 'selector__threshold': 0.9}",0.7697784810126582,0.03890468541638889,5,Random Forest
+"{'model__max_features': 0.2, 'model__min_samples_leaf': 3, 'selector': 'passthrough'}",0.7697784810126582,0.04381580248435696,5,Random Forest
+"{'model__max_features': 'sqrt', 'model__min_samples_leaf': 3, 'selector': CorrelationFilter(threshold=0.9), 'selector__threshold': 0.9}",0.7635284810126582,0.04242485191496147,7,Random Forest
+"{'model__max_features': 'sqrt', 'model__min_samples_leaf': 3, 'selector': 'passthrough'}",0.757246835443038,0.0405161429962718,8,Random Forest
+"{'model__max_features': 'sqrt', 'model__min_samples_leaf': 1, 'selector': 'passthrough'}",0.7785126582278481,0.042776148849925935,1,Extra Trees
+"{'model__max_features': 0.2, 'model__min_samples_leaf': 1, 'selector': 'passthrough'}",0.7784810126582278,0.04902811855689845,2,Extra Trees
+"{'model__max_features': 'sqrt', 'model__min_samples_leaf': 1, 'selector': CorrelationFilter(threshold=0.9), 'selector__threshold': 0.9}",0.7772784810126583,0.04681770319183022,3,Extra Trees
+"{'model__max_features': 0.2, 'model__min_samples_leaf': 1, 'selector': CorrelationFilter(threshold=0.9), 'selector__threshold': 0.9}",0.7746993670886075,0.031754200416819194,4,Extra Trees
+"{'model__max_features': 'sqrt', 'model__min_samples_leaf': 3, 'selector': CorrelationFilter(threshold=0.9), 'selector__threshold': 0.9}",0.7572151898734176,0.03531305278283733,5,Extra Trees
+"{'model__max_features': 0.2, 'model__min_samples_leaf': 3, 'selector': 'passthrough'}",0.7521993670886076,0.04243878842637785,6,Extra Trees
+"{'model__max_features': 0.2, 'model__min_samples_leaf': 3, 'selector': CorrelationFilter(threshold=0.9), 'selector__threshold': 0.9}",0.7496993670886075,0.03983776598332167,7,Extra Trees
+"{'model__max_features': 'sqrt', 'model__min_samples_leaf': 3, 'selector': 'passthrough'}",0.7372310126582278,0.05453212313428743,8,Extra Trees
+"{'model__learning_rate': 0.1, 'model__subsample': 0.8, 'selector': 'passthrough'}",0.7722784810126583,0.043326460071010764,1,Gradient Boosting
+"{'model__learning_rate': 0.1, 'model__subsample': 0.8, 'selector': CorrelationFilter(threshold=0.9), 'selector__threshold': 0.9}",0.7659810126582278,0.03522473173332888,2,Gradient Boosting
+"{'model__learning_rate': 0.05, 'model__subsample': 0.8, 'selector': 'passthrough'}",0.7622151898734176,0.04061846622054157,3,Gradient Boosting
+"{'model__learning_rate': 0.05, 'model__subsample': 0.8, 'selector': CorrelationFilter(threshold=0.9), 'selector__threshold': 0.9}",0.7610284810126582,0.04204177047972291,4,Gradient Boosting
+"{'model__estimator__max_depth': 3, 'model__learning_rate': 0.5, 'model__n_estimators': 200, 'selector': 'passthrough'}",0.7271835443037975,0.05011647225753042,1,AdaBoost
+"{'model__estimator__max_depth': 3, 'model__learning_rate': 0.1, 'model__n_estimators': 200, 'selector': 'passthrough'}",0.7046360759493671,0.05591943406072855,2,AdaBoost
+"{'model__estimator__max_depth': 2, 'model__learning_rate': 0.5, 'model__n_estimators': 200, 'selector': 'passthrough'}",0.6232753164556961,0.0492052203667897,3,AdaBoost
+"{'model__estimator__max_depth': 2, 'model__learning_rate': 0.1, 'model__n_estimators': 200, 'selector': 'passthrough'}",0.5995569620253164,0.05351366878055317,4,AdaBoost
+"{'model__voting': 'soft', 'model__weights': None, 'selector': 'passthrough'}",0.7797784810126582,0.05550229659297908,1,Voting Ensemble
+"{'model__voting': 'soft', 'model__weights': [2, 1, 1], 'selector': 'passthrough'}",0.7472151898734177,0.06454700221010895,2,Voting Ensemble

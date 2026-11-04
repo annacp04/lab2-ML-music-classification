@@ -1,0 +1,3 @@
+model,val_acc_cv,test_acc,test_macro_f1
+Random Forest | Correlation,0.7848101265822786,0.795,0.7911079338986315
+Extra Trees | Correlation,0.7772784810126583,0.785,0.7801191569420067

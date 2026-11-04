@@ -1,0 +1,26 @@
+model,label,approach,acc,diff_vs_ref_pp,only_ref_right,only_model_right,p_mcnemar,p_holm,verdict
+t2_vggish_svm,VGGish frozen + SVM (T2),Pretrained audio,0.84,4.499999999999993,14,23,0.18774155899882317,1.0,no significant difference
+t2_vggish_rf,VGGish frozen + RF (T2),Pretrained audio,0.835,3.9999999999999925,17,25,0.27995623852893914,1.0,no significant difference
+t2_vggish_logreg,VGGish frozen + LogReg (T2),Pretrained audio,0.83,3.499999999999992,19,26,0.3712980344710104,1.0,no significant difference
+t1_cnn_scratch,CNN from scratch (Task 1 run),CNN from scratch,0.825,2.9999999999999916,15,21,0.4050322461407632,1.0,no significant difference
+cnn_scratch,CNN from scratch (multi-partition run),CNN from scratch,0.805,1.0000000000000009,15,17,0.860050065908581,1.0,no significant difference
+lab1_random_forest_without_selection,Lab 1 · Random Forest,Hand-crafted descriptors,0.79,-0.5000000000000004,7,6,1.0,1.0,no significant difference
+lab1_extra_trees_correlation,Lab 1 · Extra Trees (+corr.),Hand-crafted descriptors,0.785,-1.0000000000000009,12,10,0.8318119049072266,1.0,no significant difference
+t2_effnetb0_full,EfficientNetB0 · full (T2),Pretrained vision,0.765,-3.0000000000000027,26,20,0.4613911821367651,1.0,no significant difference
+t2_vgg16_block45,VGG16 · last 2 blocks (T2),Pretrained vision,0.745,-5.000000000000004,28,18,0.18392482137699062,1.0,no significant difference
+t2_resnet50_full,ResNet50 · full (T2),Pretrained vision,0.745,-5.000000000000004,27,17,0.17417114727072658,1.0,no significant difference
+t2_vgg16_full,VGG16 · full (T2),Pretrained vision,0.74,-5.500000000000005,31,20,0.16077960181198847,1.0,no significant difference
+t2_vgg16_block45_aug,VGG16 · last 2 blocks + SpecAugment (T2),Pretrained vision,0.72,-7.500000000000007,33,18,0.04887389231827033,0.586486707819244,no significant difference
+t2_effnetb0_last,EfficientNetB0 · last block (T2),Pretrained vision,0.715,-8.000000000000007,32,16,0.029304946720529308,0.41026925408741033,no significant difference
+t2_effnetb0_last2,EfficientNetB0 · last 2 blocks (T2),Pretrained vision,0.715,-8.000000000000007,32,16,0.029304946720529308,0.41026925408741033,no significant difference
+vgg16_ft,VGG16 fine-tuned (multi-partition run),Pretrained vision,0.71,-8.500000000000007,35,18,0.027008317653722358,0.40512476480583537,no significant difference
+t2_vgg16_block5,VGG16 · last block (T2),Pretrained vision,0.705,-9.000000000000007,32,14,0.011351591436778108,0.18162546298844973,no significant difference
+t2_resnet50_conv45,ResNet50 · last 2 blocks (T2),Pretrained vision,0.7,-9.500000000000009,34,15,0.009399241523873059,0.159787105905842,no significant difference
+t2_effnetb0_head,EfficientNetB0 · head only (T2),Pretrained vision,0.695,-10.000000000000009,36,16,0.0077874363057435225,0.1401738535033834,no significant difference
+t2_resnet50_head,ResNet50 · head only (T2),Pretrained vision,0.69,-10.500000000000009,36,15,0.0046013097117665325,0.08742488452356412,no significant difference
+t2_vgg16emb_rf,VGG16 frozen + RF (T2),Pretrained vision,0.69,-10.500000000000009,35,14,0.003801654409748778,0.07603308819497556,no significant difference
+t2_resnet50_conv5,ResNet50 · last block (T2),Pretrained vision,0.685,-10.999999999999998,36,14,0.0026021714567221466,0.057247772047887224,no significant difference
+t2_vgg16emb_svm,VGG16 frozen + SVM (T2),Pretrained vision,0.685,-10.999999999999998,36,14,0.0026021714567221466,0.057247772047887224,no significant difference
+t2_vgg16_head,VGG16 · head only (T2),Pretrained vision,0.67,-12.5,44,19,0.0022275315109880345,0.05123322475272479,no significant difference
+vgg16_emb_logreg,VGG16 frozen + LogReg (multi-partition run),Pretrained vision,0.66,-13.5,44,17,0.0007299045109347685,0.017517708262434446,worse than reference
+t2_vgg16emb_logreg,VGG16 frozen + LogReg (T2),Pretrained vision,0.63,-16.500000000000004,49,16,5.084767048790175e-05,0.0012711917621975437,worse than reference

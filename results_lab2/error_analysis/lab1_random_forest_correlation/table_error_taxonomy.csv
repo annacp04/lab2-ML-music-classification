@@ -1,0 +1,6 @@
+category,n_errors,% of errors
+confident error,0,0.0
+"near-tie, true = runner-up",57,32.6
+"near-tie, other runner-up",45,25.7
+runner-up miss,41,23.4
+other error (true rank >= 3),32,18.3

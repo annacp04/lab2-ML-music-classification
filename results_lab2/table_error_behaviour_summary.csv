@@ -1,0 +1,4 @@
+,n_observations,n_partitions,accuracy,top2_accuracy,top3_accuracy,mean_conf_correct,mean_conf_errors,AUROC_confidence,ECE,pct_errors_true_is_runner_up,pct_errors_near_tie,pct_errors_confident,pct_errors_stable_songs
+Descriptors (Lab 1),1000.0,5.0,0.825,0.925,0.972,0.538,0.348,0.807,0.32,0.56,0.583,0.0,0.733
+CNN from scratch,1000.0,5.0,0.772,0.894,0.938,0.867,0.616,0.838,0.044,0.535,0.228,0.096,0.727
+Pretrained vision (VGG16 fine-tuned),1000.0,5.0,0.677,0.829,0.902,0.849,0.636,0.795,0.103,0.471,0.164,0.142,0.7

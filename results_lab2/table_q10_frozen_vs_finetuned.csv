@@ -1,0 +1,10 @@
+setting,test_acc,val_acc,train_time_s,infer_ms_per_song
+VGG16 frozen + LogReg,0.63,0.638,0.496,7.157
+VGG16 frozen + SVM,0.685,0.688,1.007,7.786
+VGG16 frozen + RF,0.69,0.675,3.014,7.371
+"VGG16 head only (frozen features, linear layer)",0.67,0.65,73.503,3.778
+"VGG16 last 2 blocks (fine-tuned, selected)",0.745,0.812,160.539,3.951
+VGG16 full network,0.74,0.775,251.17,3.897
+VGGish frozen + LogReg,0.83,0.9,0.599,1002.021
+VGGish frozen + SVM,0.84,0.912,0.369,1002.147
+VGGish frozen + RF,0.835,0.9,3.041,1002.118

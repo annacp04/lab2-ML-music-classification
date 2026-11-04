@@ -1,0 +1,17 @@
+,value
+model,vgg16_ft
+n_observations,1000
+n_partitions,5
+accuracy,0.677
+top2_accuracy,0.829
+top3_accuracy,0.902
+mean_conf_correct,0.8485946366469719
+mean_conf_errors,0.6360977578018576
+AUROC_confidence,0.795292928646231
+ECE,0.10295814478
+pct_errors_true_is_runner_up,0.47058823529411764
+pct_errors_near_tie,0.16408668730650156
+pct_errors_confident,0.14241486068111456
+pct_errors_stable_songs,0.7004830917874396
+TIE_MARGIN,0.1
+CONFIDENT,0.9

@@ -1,0 +1,13 @@
+model,seed,frac,n_train,test_acc
+cnn_scratch,42,0.1,79,0.17
+cnn_scratch,42,0.25,199,0.305
+cnn_scratch,42,0.5,399,0.705
+cnn_scratch,42,1.0,799,0.81
+cnn_scratch,43,0.1,79,0.155
+cnn_scratch,43,0.25,199,0.385
+cnn_scratch,43,0.5,399,0.565
+cnn_scratch,43,1.0,799,0.78
+cnn_scratch,44,0.1,79,0.295
+cnn_scratch,44,0.25,199,0.31
+cnn_scratch,44,0.5,399,0.585
+cnn_scratch,44,1.0,799,0.755

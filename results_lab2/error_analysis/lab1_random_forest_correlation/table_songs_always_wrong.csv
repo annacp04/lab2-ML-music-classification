@@ -1,0 +1,16 @@
+song,genre,n_eval,n_wrong,mean_p_true,most_common_pred,frac_wrong
+reggae.00022,reggae,4,4,0.086,hiphop,1.0
+rock.00051,rock,4,4,0.19,disco,1.0
+hiphop.00031,hiphop,3,3,0.098,pop,1.0
+country.00099,country,3,3,0.154,blues,1.0
+pop.00081,pop,3,3,0.193,reggae,1.0
+blues.00001,blues,3,3,0.227,reggae,1.0
+classical.00051,classical,2,2,0.05,reggae,1.0
+blues.00075,blues,2,2,0.073,hiphop,1.0
+classical.00054,classical,2,2,0.085,blues,1.0
+disco.00047,disco,2,2,0.095,classical,1.0
+rock.00052,rock,2,2,0.095,hiphop,1.0
+disco.00020,disco,2,2,0.098,country,1.0
+classical.00052,classical,2,2,0.112,jazz,1.0
+reggae.00088,reggae,2,2,0.143,pop,1.0
+rock.00054,rock,2,2,0.143,country,1.0

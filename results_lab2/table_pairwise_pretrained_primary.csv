@@ -1,0 +1,29 @@
+A,B,acc_A,acc_B,only_A_right,only_B_right,p_mcnemar,p_holm,verdict
+Lab 1 · Random Forest (+corr.),CNN from scratch,0.795,0.805,15,17,0.860050065908581,1.0,no significant difference
+Lab 1 · Random Forest (+corr.),VGG16 · last 2 blocks (T2),0.795,0.745,28,18,0.18392482137699062,1.0,no significant difference
+Lab 1 · Random Forest (+corr.),EfficientNetB0 · full (T2),0.795,0.765,26,20,0.4613911821367651,1.0,no significant difference
+Lab 1 · Random Forest (+corr.),VGG16 frozen + SVM (T2),0.795,0.685,36,14,0.0026021714567221466,0.06245211496133152,no significant difference
+Lab 1 · Random Forest (+corr.),VGGish frozen + LogReg (T2),0.795,0.83,19,26,0.3712980344710104,1.0,no significant difference
+Lab 1 · Random Forest (+corr.),VGGish frozen + SVM (T2),0.795,0.84,14,23,0.18774155899882317,1.0,no significant difference
+Lab 1 · Random Forest (+corr.),VGGish frozen + RF (T2),0.795,0.835,17,25,0.27995623852893914,1.0,no significant difference
+CNN from scratch,VGG16 · last 2 blocks (T2),0.805,0.745,26,14,0.0806904677519924,1.0,no significant difference
+CNN from scratch,EfficientNetB0 · full (T2),0.805,0.765,21,13,0.22948101302608848,1.0,no significant difference
+CNN from scratch,VGG16 frozen + SVM (T2),0.805,0.685,36,12,0.0007172696733945829,0.017931741834864574,A≠B
+CNN from scratch,VGGish frozen + LogReg (T2),0.805,0.83,16,21,0.5113757815852296,1.0,no significant difference
+CNN from scratch,VGGish frozen + SVM (T2),0.805,0.84,15,22,0.3240086000878364,1.0,no significant difference
+CNN from scratch,VGGish frozen + RF (T2),0.805,0.835,17,23,0.42959050784338615,1.0,no significant difference
+VGG16 · last 2 blocks (T2),EfficientNetB0 · full (T2),0.745,0.765,20,24,0.651587827208914,1.0,no significant difference
+VGG16 · last 2 blocks (T2),VGG16 frozen + SVM (T2),0.745,0.685,26,14,0.0806904677519924,1.0,no significant difference
+VGG16 · last 2 blocks (T2),VGGish frozen + LogReg (T2),0.745,0.83,15,32,0.018623836615006432,0.3724767323001287,no significant difference
+VGG16 · last 2 blocks (T2),VGGish frozen + SVM (T2),0.745,0.84,14,33,0.007942726509483574,0.1826827097181222,no significant difference
+VGG16 · last 2 blocks (T2),VGGish frozen + RF (T2),0.745,0.835,16,34,0.015346677832630107,0.32228023448523224,no significant difference
+EfficientNetB0 · full (T2),VGG16 frozen + SVM (T2),0.765,0.685,27,11,0.013852965261321515,0.3047652357490733,no significant difference
+EfficientNetB0 · full (T2),VGGish frozen + LogReg (T2),0.765,0.83,14,27,0.05958388801809633,1.0,no significant difference
+EfficientNetB0 · full (T2),VGGish frozen + SVM (T2),0.765,0.84,13,28,0.027533155829587486,0.5231299607621622,no significant difference
+EfficientNetB0 · full (T2),VGGish frozen + RF (T2),0.765,0.835,16,30,0.054076031858869555,0.973368573459652,no significant difference
+VGG16 frozen + SVM (T2),VGGish frozen + LogReg (T2),0.685,0.83,12,41,8.171334999262925e-05,0.0021245470998083604,A≠B
+VGG16 frozen + SVM (T2),VGGish frozen + SVM (T2),0.685,0.84,7,38,3.1213096463034162e-06,8.739667009649565e-05,A≠B
+VGG16 frozen + SVM (T2),VGGish frozen + RF (T2),0.685,0.835,10,40,2.3861331676755526e-05,0.0006442559552723992,A≠B
+VGGish frozen + LogReg (T2),VGGish frozen + SVM (T2),0.83,0.84,10,12,0.8318119049072266,1.0,no significant difference
+VGGish frozen + LogReg (T2),VGGish frozen + RF (T2),0.83,0.835,12,13,1.0,1.0,no significant difference
+VGGish frozen + SVM (T2),VGGish frozen + RF (T2),0.84,0.835,5,4,1.0,1.0,no significant difference

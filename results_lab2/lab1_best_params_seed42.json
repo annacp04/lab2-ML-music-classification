@@ -1,0 +1,118 @@
+{
+ "Logistic Regression | Without selection": {
+  "model__C": 0.1,
+  "selector": "passthrough"
+ },
+ "Logistic Regression | L1 log\u00edstica": {
+  "model__C": 1,
+  "selector": "SelectFromModel(estimator=LogisticRegression(C=0.1, max_iter=10000,\n                                             penalty='l1', random_state=42,\n                                             solver='saga', tol=0.001))",
+  "selector__estimator__C": 0.1
+ },
+ "Logistic Regression | PCA var": {
+  "model__C": 0.1,
+  "selector": "PCA(n_components=0.99, random_state=42, svd_solver='full')",
+  "selector__n_components": 0.99
+ },
+ "Logistic Regression | ANOVA": {
+  "model__C": 1,
+  "selector": "SelectKBest(k=40, score_func=<function _anova_score at 0x7ba1004427a0>)",
+  "selector__k": 40
+ },
+ "KNN | LDA": {
+  "model__n_neighbors": 13,
+  "model__weights": "distance",
+  "selector": "LinearDiscriminantAnalysis()"
+ },
+ "KNN | L1 log\u00edstica": {
+  "model__n_neighbors": 5,
+  "model__weights": "distance",
+  "selector": "SelectFromModel(estimator=LogisticRegression(C=0.1, max_iter=10000,\n                                             penalty='l1', random_state=42,\n                                             solver='saga', tol=0.001))",
+  "selector__estimator__C": 0.1
+ },
+ "KNN | PCA var": {
+  "model__n_neighbors": 5,
+  "model__weights": "distance",
+  "selector": "PCA(n_components=0.99, random_state=42, svd_solver='full')",
+  "selector__n_components": 0.99
+ },
+ "KNN | Without selection": {
+  "model__n_neighbors": 5,
+  "model__weights": "distance",
+  "selector": "passthrough"
+ },
+ "Decision Tree | RF importancia": {
+  "model__criterion": "entropy",
+  "model__max_depth": 10,
+  "model__min_samples_leaf": 1,
+  "selector": "SelectFromModel(estimator=RandomForestClassifier(n_estimators=200, n_jobs=1,\n                                                 random_state=42),\n                max_features=50, threshold=-inf)",
+  "selector__max_features": 50
+ },
+ "Decision Tree | Without selection": {
+  "model__criterion": "entropy",
+  "model__max_depth": 10,
+  "model__min_samples_leaf": 5,
+  "selector": "passthrough"
+ },
+ "Decision Tree | Correlation": {
+  "model__criterion": "entropy",
+  "model__max_depth": 10,
+  "model__min_samples_leaf": 5,
+  "selector": "CorrelationFilter(threshold=0.9)",
+  "selector__threshold": 0.9
+ },
+ "ANN (MLP) | PCA var": {
+  "model__alpha": 0.001,
+  "model__hidden_layer_sizes": "(128, 64)",
+  "selector": "PCA(n_components=0.99, random_state=42, svd_solver='full')",
+  "selector__n_components": 0.99
+ },
+ "ANN (MLP) | Without selection": {
+  "model__alpha": 0.001,
+  "model__hidden_layer_sizes": "(128, 64)",
+  "selector": "passthrough"
+ },
+ "Random Forest | Correlation": {
+  "model__max_features": "sqrt",
+  "model__min_samples_leaf": 1,
+  "selector": "CorrelationFilter(threshold=0.9)",
+  "selector__threshold": 0.9
+ },
+ "Random Forest | Without selection": {
+  "model__max_features": 0.2,
+  "model__min_samples_leaf": 1,
+  "selector": "passthrough"
+ },
+ "Extra Trees | Without selection": {
+  "model__max_features": "sqrt",
+  "model__min_samples_leaf": 1,
+  "selector": "passthrough"
+ },
+ "Extra Trees | Correlation": {
+  "model__max_features": "sqrt",
+  "model__min_samples_leaf": 1,
+  "selector": "CorrelationFilter(threshold=0.9)",
+  "selector__threshold": 0.9
+ },
+ "Gradient Boosting | Without selection": {
+  "model__learning_rate": 0.1,
+  "model__subsample": 0.8,
+  "selector": "passthrough"
+ },
+ "Gradient Boosting | Correlation": {
+  "model__learning_rate": 0.1,
+  "model__subsample": 0.8,
+  "selector": "CorrelationFilter(threshold=0.9)",
+  "selector__threshold": 0.9
+ },
+ "AdaBoost | Without selection": {
+  "model__estimator__max_depth": 3,
+  "model__learning_rate": 0.5,
+  "model__n_estimators": 200,
+  "selector": "passthrough"
+ },
+ "Voting Ensemble | Without selection": {
+  "model__voting": "soft",
+  "model__weights": null,
+  "selector": "passthrough"
+ }
+}

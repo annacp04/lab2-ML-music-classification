@@ -1,0 +1,5 @@
+,Lab 1 · Random Forest (+corr.),CNN from scratch,VGG16 fine-tuned,VGG16 frozen + LogReg
+Lab 1 · Random Forest (+corr.),1.0,0.495,0.527,0.564
+CNN from scratch,0.495,1.0,0.749,0.631
+VGG16 fine-tuned,0.527,0.749,1.0,0.905
+VGG16 frozen + LogReg,0.564,0.631,0.905,1.0
