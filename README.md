@@ -14,7 +14,7 @@ Lab 1 repository (descriptors, preprocessing and models): <https://github.com/an
 
 ---
 
-## TL;DR – main findings
+## Main findings
 
 Test accuracy over **5 different 80/20 song-level partitions** (seeds 42–46, same test songs for every model), mean ± SD:
 
@@ -45,7 +45,7 @@ Main partition only (seed 42, one run, exploratory): VGGish frozen embeddings + 
 ├── task_1.ipynb                # Task 1: CNN from scratch – preprocessing, 16-config search, final model
 ├── task_2.ipynb                # Task 2: fine-tuning (3 nets × 4 strategies), frozen embeddings, VGGish
 ├── lab1_retraining.ipynb       # Lab 1 pipelines retrained on the shared split (CV selection, 5 partitions)
-├── multiseed_retraining.ipynb  # Final models on 5 partitions; kernel-shape (Q7) and depth (Q8) sweeps
+├── multiseed_retraining.ipynb  
 ├── analysis.ipynb              # Comparison of all models + research questions Q1–Q10
 ├── Documentation.pdf           # Report: methods, results, discussion
 ├── split_seed42.json           # Main 80/20 partition (list of song IDs)
@@ -73,7 +73,6 @@ Main partition only (seed 42, one run, exploratory): VGGish frozen embeddings + 
 | `results_lab2/table_ensembles.csv` | Table 20 |
 | `results_lab2/table_cost.csv`, `costs.csv` | Table 21 |
 | `results_lab2/learning_curve_*.csv` | Table 22 |
-| `results_lab2/table_kernels*.csv`, `table_depth.csv` | Q7 / Q8 (see below) |
 
 ---
 
@@ -118,6 +117,8 @@ Wilson intervals for single accuracies; exact McNemar test (paired, same 200 son
 
 ## Results by research question
 
+Q7 (kernel shapes) and Q8 (depth vs. parameters) were optional and are **not addressed** in this report. Depth and number of filters are explored as part of the Task 1 configuration search (16 configurations, Table 2 of the report).
+
 | # | Question | Answer (short) | Evidence |
 |---|---|---|---|
 | Q1 | Do learned features beat descriptors? | **No.** RF 0.825 vs CNN 0.772 (n.s.), VGG16-ft 0.677, VGG16 frozen 0.616. On seed 42 alone the CNN (0.805) and VGGish (0.84) look better, but not significantly. | `figures/q1_*` |
@@ -126,8 +127,6 @@ Wilson intervals for single accuracies; exact McNemar test (paired, same 200 son
 | Q4 | Is the extra cost worth it? | **Not for accuracy.** RF: 2.7 s train, 0.19 ms/song, 15 MB. CNN: 58.7 s (21.5×), 4.3 ms (22×), 1.6 MB. VGG16-ft: 127 s (47×), 8.1 ms, 59 MB. | `figures/q4_*`, `table_cost.csv` |
 | Q5 | How much does one split tell you? | **Little.** Range 5.5–8 pp across partitions, equal to the binomial noise of 200 songs; ranking depends on the partition; ≈ 7 pp needed for significance with ~40 discordant songs. | `figures/q5_*`, `table_detectable_difference.csv` |
 | Q6 | Data size? | The gap RF − CNN is 34.7 pp at 10 % data, 14.8 pp at 50 % and 5.2 pp at 100 %; RF flattens, the CNN is still rising (but its curve is confounded with the number of optimisation steps). | `figures/q6_learning_curves.png` |
-| Q7 | Photo-like or musical kernels? | Square 3×3 = 0.773, 5×5 = 0.772, tall 7×3 (freq.) = 0.788, wide 3×7 (time) = 0.760, **Pons-style musical = 0.632** (105 k params, under-fits: train 0.81). Rectangular/5×5 kernels are indistinguishable from 3×3; the musical-kernel network is worse (−14 pp, p = 0.025, Holm 0.10). | `figures/q7_kernels.png`, `table_kernels*.csv` |
-| Q8 | Depth and parameters? | Test accuracy rises 0.547 → 0.672 → 0.732 → 0.762 → 0.778 → 0.788 for 5.5 k → 24 k → 95 k → 99 k → 392 k → 983 k parameters; gains are < 2 pp beyond 4 blocks. The train–test gap grows from ≈ 0 (2 blocks) to ≈ 0.22 (4+ blocks): overfitting starts around 4 blocks / ~100 k parameters. | `figures/q8_depth_params.png`, `table_depth.csv` |
 | Q9 | Does fine-tuning help? Vision vs audio? | Fine-tuning improves each ImageNet net by 5.5–7.5 pp over its frozen head, but VGG16-ft remains 9.5 pp below the scratch CNN. VGGish (audio) is the best pretrained starting point (0.83–0.84 vs ≤ 0.765). | `figures/q9_*` |
 | Q10 | Frozen embeddings + classical ML or fine-tuning? | Depends on pretraining domain. VGG16: fine-tuning wins (0.745 vs 0.63–0.69) but costs 50–320× more training time. VGGish: frozen + SVM is the best option (0.840, 0.4 s training). | `figures/q10_*` |
 
@@ -139,8 +138,6 @@ Wilson intervals for single accuracies; exact McNemar test (paired, same 200 son
 ![Ensembles](results_lab2/figures/q3_ensembles.png)
 ![Cost](results_lab2/figures/q4_cost_all_models.png)
 ![Learning curves](results_lab2/figures/q6_learning_curves.png)
-![Kernel shapes](results_lab2/figures/q7_kernels.png)
-![Depth and parameters](results_lab2/figures/q8_depth_params.png)
 ![Pretrained models](results_lab2/figures/q9_pretrained_overview.png)
 
 ---
@@ -149,19 +146,9 @@ Wilson intervals for single accuracies; exact McNemar test (paired, same 200 son
 
 The notebooks were developed on **Google Colab (GPU runtime)** with Google Drive mounted.
 
-| Notebook | Open in Colab |
-|---|---|
-| `task_1.ipynb` | [![Open](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/annacp04/lab2-ML-music-classification/blob/main/task_1.ipynb) |
-| `task_2.ipynb` | [![Open](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/annacp04/lab2-ML-music-classification/blob/main/task_2.ipynb) |
-| `lab1_retraining.ipynb` | [![Open](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/annacp04/lab2-ML-music-classification/blob/main/lab1_retraining.ipynb) |
-| `multiseed_retraining.ipynb` | [![Open](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/annacp04/lab2-ML-music-classification/blob/main/multiseed_retraining.ipynb) |
-| `analysis.ipynb` | [![Open](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/annacp04/lab2-ML-music-classification/blob/main/analysis.ipynb) |
-
 1. Copy the dataset folders from the Drive link above and this repository into your Drive. The notebooks expect the project folder at `/content/drive/MyDrive/MSC/music-genre-classification-2` and the spectrograms copied to `/content/data/images_original`; **edit the path constants at the top of each notebook** if yours differ.
 2. `lab1_retraining.ipynb` reuses the Lab 1 code (`Preprocessing`, `Models`, `grid_config`), so clone the Lab 1 repository first: `git clone https://github.com/annacp04/music-genre-classification`.
 3. Run in this order: `lab1_retraining` → `task_1` → `task_2` → `multiseed_retraining` → `analysis`. The shared outputs (splits, predictions, tables, figures) are written to `results_lab2/`.
-
-**Requirements:** Python 3, TensorFlow/Keras (the notebooks print the versions in use), `tensorflow_hub` (VGGish), scikit-learn, SciPy, pandas, NumPy, Matplotlib, Pillow. Seeds for Python, NumPy and TensorFlow are fixed, but GPU kernels are not fully deterministic (same CNN config and seed gave 0.800–0.825 on the same partition), so differences of 2–3 pp between single runs should not be interpreted.
 
 ---
 
@@ -170,17 +157,6 @@ The notebooks were developed on **Google Colab (GPU runtime)** with Google Drive
 - **200 test songs:** one song = 0.5 pp; the 5 partitions overlap in their training sets, so the corrected t-test has little power and "not significant" does not mean "equivalent".
 - **Selection on seed 42:** hyper-parameters were chosen on the main partition and kept on the others, so seed-42 values are slightly optimistic and test songs of the other seeds partly overlap with songs used for selection. This affects all models equally.
 - **Task 2 selection:** the best of 12 configurations was chosen on an 80-song validation set (optimistic: VGG16 drops from 0.745 to 0.710 on the same partition in the multi-partition pipeline, and to 0.677 on average).
-- **Inputs:** the CNNs see 8-bit colour-mapped PNGs, not the underlying log-mel matrices.
-- **VGGish** was run on a single partition and could not be fine-tuned; **CLAP** was not tested.
+- **VGGish** was run on a single partition and could not be fine-tuned. 
 - **GTZAN issues:** repeated songs/artists and some mislabelled clips; splits are by song, not by artist, which can favour memorisation. Conclusions apply to this small-data setting.
 - Training times mix CPU (forests) and GPU (networks) and exclude feature/spectrogram extraction.
-
----
-
-## References
-
-- Tzanetakis & Cook. *Musical genre classification of audio signals.* IEEE TSAP, 2002 (GTZAN).
-- Pons et al. *Experimenting with musically motivated convolutional neural networks.* CBMI, 2016.
-- Hershey et al. *CNN architectures for large-scale audio classification.* ICASSP, 2017 (VGGish).
-- Simonyan & Zisserman. *Very deep convolutional networks for large-scale image recognition.* ICLR, 2015 (VGG).
-- Nadeau & Bengio. *Inference for the generalization error.* Machine Learning, 2003 (corrected resampled t-test).
